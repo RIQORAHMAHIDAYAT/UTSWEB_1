@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Kenangan Mantan</title>
+
+    <!-- <--- my style--- -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <---Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kenangan<span>Mantan</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#Menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Modal for Search (hidden by default) -->
+      <div id="search-modal" class="modal">
+        <input type="text" placeholder="Cari produk..." />
+        <button class="close-modal">&times;</button>
+      </div>
+
+      <!-- Modal for Cart (hidden by default) -->
+      <div id="cart-modal" class="modal">
+        <p>Keranjang Anda kosong</p>
+        <button class="close-modal">&times;</button>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Secangkir <span>Kopi Kenangan</span></h1>
+        <p>
+          Kopi Kenangan adalah brand kopi kekinian yang menawarkan konsep
+          grab-and-go dengan kualitas premium. Dengan biji kopi pilihan dari
+          Indonesia, racikan kopinya menghadirkan cita rasa autentik yang khas
+          dan terjangkau.
+        </p>
+        <!-- Ubah href menjadi #Menu untuk menuju ke bagian Menu(agar klik beli sekarang k tampilan menu) -->
+        <a href="#Menu" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Tentang_kami.jpeg.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi Kenangan?</h3>
+          <p>
+            Kopi Kenangan dipilih karena rasanya yang autentik, harga
+            terjangkau, dan kemudahan dalam konsep grab-and-go
+          </p>
+          <p>
+            Selain itu, Kopi Kenangan menggunakan biji kopi lokal berkualitas
+            tinggi, memberikan pengalaman kopi yang lezat dan konsisten di
+            setiap cangkir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section end -->
+
+    <!-- Menu Section Start -->
+    <section id="Menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Tampilan menu Kopi Kenangan dirancang sederhana namun modern, memudahkan
+        pelanggan dalam memilih minuman favorit mereka.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/menu/1.jpeg.jpg"
+            alt="Espresso Kenangan"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Espresso Kenangan -</h3>
+          <p class="menu-card-price">IDR 20K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/2.jpeg.jpg"
+            alt="Espresso Kenangan"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Cappuccino Kenangan -</h3>
+          <p class="menu-card-price">IDR 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/3.jpeg.jpg"
+            alt="Espresso Kenangan"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Ice Coffe Kenangan -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/4.jpeg.jpg"
+            alt="Espresso Kenangan"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Coffe Kenangan Pahit -</h3>
+          <p class="menu-card-price">IDR 30K</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section end -->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        "Tertarik untuk berbagi cerita atau memiliki pertanyaan? Hubungi kami dan tim kopi kenangan akan dengan senang hati melayani kebutuhan Anda."
+      </p>
+
+      <!-- Memberi alamat google maps di kontak -->
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.183544060093!2d109.1051846758598!3d-6.868597267205044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9e2805c1c1b%3A0xe3e61e1ae59106ff!2sPoliteknik%20Harapan%20Bersama%20Tegal!5e0!3m2!1sid!2sid!4v1730743750339!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <!-- menambahkan tampilan input nama,email dkk disamping google maps -->
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section end -->
+
+    <!-- Footer start(menambahkan logo sosial media) -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#Menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Riqo</a>. | &copy;2024</p>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
